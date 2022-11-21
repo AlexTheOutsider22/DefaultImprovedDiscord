@@ -1,0 +1,155 @@
+/**
+ * @name Default Improved
+ * @description Lots Of CSS Add-ons To Improve The Default Client
+ * @author AlexTheOutsider
+ * @version 1.0
+ */
+
+@import url("https://dyzean.github.io/Tokyo-Night/addons/revert-rebrand.css");
+@import url("https://nyri4.github.io/Discolored/main.css");
+
+/* Syntax Highlight, get hljs styling with Tokyo Night scheme (Enabled by default) */
+@import url("https://dyzean.github.io/Tokyo-Night/addons/syntax-highlight.css");
+
+/* Username Background, get colorful background behind username on chat, works best with Monospace addon. (Disabled by default) */
+@import url("https://dyzean.github.io/Tokyo-Night/addons/username-background.css");
+
+/* Mac Like Titlebar (windows only), get mac style titlebar on windows client (Enabled by default) */
+@import url("https://dyzean.github.io/Tokyo-Night/addons/mac-titlebar.css");
+
+/* REQUIRED FOR MAC BUTTONS, DONT TOUCH THIS */
+
+/* logo */
+
+.wordmarkWindows-2dq6rw svg {
+    position: fixed;
+    top: 3px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/* ==== Discord Variables ==== */
+
+/* Macchiato (Only Enable if You Want a Color scheme, its here to qualify as a full theme) */
+/* @import url("https://catppuccin.github.io/discord/dist/catppuccin-macchiato.theme.css");  */
+
+{
+  /* Mac Titlebar addons */
+  --close-button-color: #ff0000;
+  --maximize-button-color: #ffbb00;
+  --minimize-button-color: #00ff2a;
+}
+
+
+/* custom font */
+:root {
+    --font-primary: "Segoe UI Light", sans-serif;
+    --font-display: "Segoe UI Light", sans-serif;
+}
+
+/* Muted Channels */
+
+.modeMuted-2T4MDZ .icon-2W8DHg path{ display: none; }
+.modeMuted-2T4MDZ .iconContainer-21RCa3{ position: relative; }
+.modeMuted-2T4MDZ .iconContainer-21RCa3:before{
+    content: '🔇';
+    position: absolute;
+    font-size: 20px; 
+}
+
+/* =============[BREAKER FOR TESTING]============= */
+
+
+/* Floating User panel */
+
+.panels-3wFtMD {
+  margin-right: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  border: 1px solid var(--background-secondary);
+  border-radius: 20px;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.45);
+}
+
+@import url(https://maendisease.github.io/BetterDiscordStuff/css/bearableInbox.css);
+
+
+/* Limits CodeBlock Size and Adds a Scrollbar */
+
+.markup-eYLPri blockquote, .markup-eYLPri pre > code{
+  max-height:150px; /*Change this to your height preference.*/
+  overflow-x: hidden;
+  overflow-y:scroll;
+  }
+  .markup-eYLPri blockquote::-webkit-scrollbar, .markup-eYLPri pre > code::-webkit-scrollbar {
+  width: 15px;
+  height: 15px;
+  }
+  .markup-eYLPri blockquote::-webkit-scrollbar-track , .markup-eYLPri pre > code::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: rgba(255 255 255 / 8%);/*Change this to your color choice or just remove it entirely.*/
+  }
+  .markup-eYLPri blockquote::-webkit-scrollbar-thumb, .markup-eYLPri pre > code::-webkit-scrollbar-thumb {
+  background-color: rgb(13 81 239 / 70%); /*Change this to your color choice or just remove it entirely.*/
+  border-radius: 10px;
+  }
+  .markup-eYLPri blockquote, .markup-eYLPri pre > code {
+  max-width: 629px;
+  }
+
+
+/* Channel Names Capitalized */
+.channelName-3KPsGw {
+  text-transform: capitalize;
+  }
+
+
+  /* Rounded Context Menu */
+.menu-1QACrS, .colorDefault-CDqZdO { 
+  border-radius: 15px; 
+}
+
+
+/* Better Jump To Present Button */
+[class*="jumpToPresentBar"] {
+  display: contents;
+}
+[class*="jumpToPresentBar"] > button:first-child {
+  display: none;
+}
+[class*="jumpToPresentBar"] > button:last-child {
+  position: absolute;
+  z-index: 1;
+  bottom: 24px;
+  right: 22px;
+  padding: 8px !important;
+  height: auto;
+  background-color: #5865F2;
+  box-shadow: var(--elevation-high);
+  border-radius: 100px;
+  display: flex;
+  font-size: 0px;
+  color: transparent;
+  transition: font-size .2s .1s, color .2s, padding .4s .1s;
+}
+[class*="jumpToPresentBar"] > button svg {
+  order: -1;
+  margin: 0px;
+  height: 24px;
+  width: 24px;
+  top: auto;
+  margin-right: 0px;
+  margin-left: 0px;
+  color: #FFFFFF;
+  transition: margin .6s;
+}
+[class*="jumpToPresentBar"]:hover > button {
+  padding: 8px 18px !important;
+  font-size: 14px;
+  color: #FFFFFF;
+  transition: font-size .2s, color .2s .1s, padding .4s;
+}
+[class*="jumpToPresentBar"]:hover > button svg {
+  margin-right: 2px;
+  margin-left: -6px;
+}
