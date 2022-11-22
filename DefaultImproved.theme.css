@@ -5,21 +5,36 @@
  * @version 1.0
  */
 
+
+
+/* ========== [Revert Rebrand, Used For mac Buttons] ========== */
+
 @import url("https://dyzean.github.io/Tokyo-Night/addons/revert-rebrand.css");
+
+
+
+/* ========== [Discolored, Why even Disable This?] ========== */
+
 @import url("https://nyri4.github.io/Discolored/main.css");
 
-/* Syntax Highlight, get hljs styling with Tokyo Night scheme (Enabled by default) */
+/* ========== [Syntax Highlight, get hljs styling with Tokyo Night scheme] ========== */
+
 @import url("https://dyzean.github.io/Tokyo-Night/addons/syntax-highlight.css");
 
-/* Username Background, get colorful background behind username on chat, works best with Monospace addon. (Disabled by default) */
+
+
+/* ========== [Username Background] ========== */
+
 @import url("https://dyzean.github.io/Tokyo-Night/addons/username-background.css");
 
-/* Mac Like Titlebar (windows only), get mac style titlebar on windows client (Enabled by default) */
+
+
+/* ========== [Mac Like Titlebar (Windows Only)] ========== */
+
 @import url("https://dyzean.github.io/Tokyo-Night/addons/mac-titlebar.css");
 
-/* REQUIRED FOR MAC BUTTONS, DONT TOUCH THIS */
 
-/* logo */
+/* ========== [REQUIRED FOR MAC BUTTONS, DONT TOUCH THIS - Unless You Want Default Titlebar Buttons] ========== */
 
 .wordmarkWindows-2dq6rw svg {
     position: fixed;
@@ -28,26 +43,25 @@
     transform: translate(-50%);
 }
 
-/* ==== Discord Variables ==== */
+/* ==================== [Discord Variables] ==================== */
 
-/* Macchiato (Only Enable if You Want a Color scheme, its here to qualify as a full theme) */
-/* @import url("https://catppuccin.github.io/discord/dist/catppuccin-macchiato.theme.css");  */
 
+
+  /* ========== [Mac Titlebar Add-ons] ========== */
 {
-  /* Mac Titlebar addons */
   --close-button-color: #ff0000;
   --maximize-button-color: #ffbb00;
   --minimize-button-color: #00ff2a;
 }
 
 
-/* custom font */
+/* ========== [Custom Font] ========== */
 :root {
     --font-primary: "Segoe UI Light", sans-serif;
     --font-display: "Segoe UI Light", sans-serif;
 }
 
-/* Muted Channels */
+/* ========== [Better Muted Channels Icon] ========== */
 
 .modeMuted-2T4MDZ .icon-2W8DHg path{ display: none; }
 .modeMuted-2T4MDZ .iconContainer-21RCa3{ position: relative; }
@@ -57,10 +71,8 @@
     font-size: 20px; 
 }
 
-/* =============[BREAKER FOR TESTING]============= */
 
-
-/* Floating User panel */
+/* ========== [Floating User panel] ========== */
 
 .panels-3wFtMD {
   margin-right: 5px;
@@ -71,10 +83,13 @@
   box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.45);
 }
 
+
+/* ========== [Better Inbox] ========== */
+
 @import url(https://maendisease.github.io/BetterDiscordStuff/css/bearableInbox.css);
 
 
-/* Limits CodeBlock Size and Adds a Scrollbar */
+/* ========== [Limits CodeBlock Size and Adds a Scrollbar] ========== */
 
 .markup-eYLPri blockquote, .markup-eYLPri pre > code{
   max-height:150px; /*Change this to your height preference.*/
@@ -90,7 +105,7 @@
   background-color: rgba(255 255 255 / 8%);/*Change this to your color choice or just remove it entirely.*/
   }
   .markup-eYLPri blockquote::-webkit-scrollbar-thumb, .markup-eYLPri pre > code::-webkit-scrollbar-thumb {
-  background-color: rgb(13 81 239 / 70%); /*Change this to your color choice or just remove it entirely.*/
+  background-color: rgb(120 120 120 / 70%); /*Change this to your color choice or just remove it entirely.*/
   border-radius: 10px;
   }
   .markup-eYLPri blockquote, .markup-eYLPri pre > code {
@@ -98,19 +113,22 @@
   }
 
 
-/* Channel Names Capitalized */
+/* ========== [Channel Names Capitalized] ========== */
+
 .channelName-3KPsGw {
   text-transform: capitalize;
   }
 
 
-  /* Rounded Context Menu */
-.menu-1QACrS, .colorDefault-CDqZdO { 
-  border-radius: 15px; 
+  /* ========== [Rounded Context Menu] ========== */
+
+  .menu-1QACrS, .colorDefault-CDqZdO { 
+  border-radius: 15px;  /* How Round You Want It To Be */
 }
 
 
-/* Better Jump To Present Button */
+/* ========== [Better Jump To Present Button] ========== */
+
 [class*="jumpToPresentBar"] {
   display: contents;
 }
@@ -153,3 +171,23 @@
   margin-right: 2px;
   margin-left: -6px;
 }
+
+
+/* ========== [Hide Mic And Deafen Buttons] ========== */
+
+.panels-3wFtMD>:last-child>:last-child>:not(:last-child){
+  display: none;
+}
+
+
+
+
+
+
+
+
+/* ========== [Qualification] ========== */
+
+/* Macchiato (Only Enable if You Want a Color scheme, its here to qualify as a full theme) */
+
+/* @import url("https://catppuccin.github.io/discord/dist/catppuccin-macchiato.theme.css");  */
